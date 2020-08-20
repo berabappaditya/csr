@@ -1,0 +1,42 @@
+header{
+    text-align: center;
+    margin: 0px;
+    background-color: rgba(48, 48, 48, 0.205);
+}
+.grd{
+    font-size: 3rem;
+    background: linear-gradient(45deg, aqua, blue);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display:inline;
+}
+.headbtn{
+    height: 30px;
+    width: 90px;
+    margin:40px;
+    padding: 3px;
+    border:0px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(166, 182, 202);
+    overflow: hidden;
+}
+
+
+.headbtn:hover{
+    background-color: rgba(166, 182, 202, 0.205);
+
+}
+.headbtn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+.dvcon{
+    display: inline;
+    background-image: linear-gradient(rgb(199, 199, 199), white);
+    color:red;
+}
+

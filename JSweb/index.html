@@ -7,9 +7,11 @@
 </head>
 <body>
     <h1 id="heading">Aditya</h1>
-    <button onclick="myfun()">check</button>
+    
+    <input type="number" id="inputage"  placeholder="Enter your age" value="">
+    <button style="background-color: aqua; color:aliceblue;" onclick="show(myage)">check r u 18+?</button>
     <script>
-        document.write(567+2346);
+        /*document.write(567+2346);
         document.getElementById("heading").innerHTML=3456+23453;
         var a= window.prompt("enter your name:");
         alert("your name is "+ a);
@@ -22,6 +24,37 @@
             }
             else{
                 document.write(a+"is not adult");
+                console.log("not Adult")
+            }
+        }*/
+
+       /* var bappaditya ={
+            lastname: "bera", age:"22", favcolor:"blue", favfood:"chickensoup"
+        }
+        function bappaditya(lastname, age, favcolor,favfood){
+            this.lastname=lastname;
+            this.age=age;
+            this.favcolor=favcolor;
+            this.favfood=favfood;
+
+        }
+        var a= bappaditya.age;
+        document.write(a)
+        */
+            var myage;
+        
+        function show() {
+            var myage = document.getElementById("inputage").value;
+            document.write("you are :");
+            console.log(typeof myage);
+            console.log(myage);
+
+             if (myage>= 18) {
+                document.write("adult");
+                console.log("Adult");
+            }
+            else {
+                document.write("not adult");
                 console.log("not Adult")
             }
         }

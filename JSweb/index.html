@@ -41,9 +41,11 @@
         var a= bappaditya.age;
         document.write(a)
         */
+        document.getElementById("heading").style.color="blue";
             var myage;
         
         function show() {
+            var urname = window.prompt("enter your Name");
             var myage = document.getElementById("inputage").value;
             document.write("you are :");
             console.log(typeof myage);
@@ -57,6 +59,7 @@
                 document.write("not adult");
                 console.log("not Adult")
             }
+        document.write(urname);
         }
     </script>
 </body>

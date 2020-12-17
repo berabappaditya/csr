@@ -1,0 +1,97 @@
+
+body{
+    text-align: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.colorchange{
+    padding:5px;
+    color:white;
+    background-color:magenta;
+}
+.clr{
+    padding:5px;
+    color:black;
+    background-color:aqua;
+}
+.gal1{
+background-color:rgba(12, 2, 39, 0.692);
+margin:5% 30% 5% 30%;
+color:white;
+text-align: center;
+height: 25%;
+min-height: 300px;
+width: 40%;
+border-radius: 4px;
+
+}
+.gal2{
+    background-image: url("../mini.jpg");
+    background-size: cover;
+    color:white;
+    text-align: center;
+    display: inline;
+    margin: 3%;
+    float: left;
+    height: 30%;
+    min-height: 300px;
+    width: 25%;
+}
+.gal3{
+    background-image: url("../min1.jpg");
+    background-size: cover;
+    color:white;
+    text-align: center;
+    display: inline;
+    margin: 3%;
+    float: left;
+    height: 30%;
+    min-height: 300px;
+    width: 25%;
+}
+.gal4{
+    background-image: url("../min2.jpg");
+    background-size: cover;
+    color:white;
+    text-align: center;
+    display: inline;
+    margin: 3%;
+    float: left;
+    height: 30%;
+    min-height: 300px;
+    width: 25%;
+}
+.galstyle{
+    background-image: url(../mini.jpg);
+    background-size: cover;
+    color:white;
+    text-align: center;
+    margin:5% 30% 5% 30%;
+    height: 25%;
+    min-height: 300px;
+    width: 40%; 
+
+}
+.galstyle1{
+    background-image: url(../min1.jpg);
+    background-size: cover;
+    color:white;
+    text-align: center;
+    margin:5% 30% 5% 30%;
+    height: 25%;
+    min-height: 300px;
+    width: 40%; 
+
+}
+.galstyle2{
+    background-image: url(../min2.jpg);
+    background-size: cover;
+    color:white;
+    text-align: center;
+    margin:5% 30% 5% 30%;
+    height: 25%;
+    min-height: 300px;
+    width: 40%; 
+
+}

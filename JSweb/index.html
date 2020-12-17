@@ -3,64 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="gallery.js"></script>
     <title>JSclass</title>
 </head>
 <body>
     <h1 id="heading">Aditya</h1>
+    <btn class="colorchange" id="btncolor" onmouseover="colorChange()" onmouseout="norMalize()">Bappaditya Bera</btn>
     
     <input type="number" id="inputage"  placeholder="Enter your age" value="">
     <button style="background-color: aqua; color:aliceblue;" onclick="show(myage)">check r u 18+?</button>
-    <script>
-        /*document.write(567+2346);
-        document.getElementById("heading").innerHTML=3456+23453;
-        var a= window.prompt("enter your name:");
-        alert("your name is "+ a);
-        console.log(56790+456);
-        var age=window.prompt("Enteryour age:");
-       function myfun(){
-            if(age>=18){
-                document.write(a + "is adult");
-                console.log("Adult");
-            }
-            else{
-                document.write(a+"is not adult");
-                console.log("not Adult")
-            }
-        }*/
+    <div class="weekthree" id="output">
+    <form>
+     <label for="name">Name:<input type="text" value="" id="name" placeholder="enteryourname"></input></label>
+    </form>
+    </div>
+    <div class="gal1" id="gallery1">
+    <span> Main Gallery </span>
+    <h6 id="display">Display</h6>
+    
+    </div>
+    <div  class="gal2" id="gallery2" onmouseover="galonein()" onmouseout="normalForm()">
+    
+    <p id="para1">photo1</p>
+    </div>
+    <div  class="gal3" id="gallery2" onmouseover="galtwoin()" onmouseout="normalForm()"> 
 
-       /* var bappaditya ={
-            lastname: "bera", age:"22", favcolor:"blue", favfood:"chickensoup"
-        }
-        function bappaditya(lastname, age, favcolor,favfood){
-            this.lastname=lastname;
-            this.age=age;
-            this.favcolor=favcolor;
-            this.favfood=favfood;
+    <p id="para2">photo2</p>
+    </div>
+     <div  class="gal4" id="gallery2" onmouseover="galthreein()" onmouseout="normalForm()"> 
 
-        }
-        var a= bappaditya.age;
-        document.write(a)
-        */
-        document.getElementById("heading").style.color="blue";
-            var myage;
-        
-        function show() {
-            var urname = window.prompt("enter your Name");
-            var myage = document.getElementById("inputage").value;
-            document.write("you are :");
-            console.log(typeof myage);
-            console.log(myage);
+    <p id="para3">photo3</p>
+    </div>
+    <div id="">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-Pr7q8hCjAA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
 
-             if (myage>= 18) {
-                document.write("adult");
-                console.log("Adult");
-            }
-            else {
-                document.write("not adult");
-                console.log("not Adult")
-            }
-        document.write(urname);
-        }
-    </script>
 </body>
 </html>

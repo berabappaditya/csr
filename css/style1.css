@@ -33,7 +33,7 @@ body{
   top: 50%;
   opacity: 0;
    background-color:  #e100ff;
-  padding-top:25% ;
+  padding-top:15% ;
   animation: vem_feliz 2s ease-in-out 7s forwards;
 }
 .ano_novo{
@@ -46,7 +46,7 @@ body{
   align-items: center;
   overflow: hidden;
   padding: 50% 10% 50% 0%;
-  background-color:  #0d00ff;
+  background-color:#010016;
   boarder-width:0px;
 }
 .ano_novo>span{
@@ -59,8 +59,8 @@ span.seis{
 position: absolute;
   top: 10%;
   right: 50%;
-  padding-top: 37%;
-  margin-right: -78px;
+  padding-top: 38%;
+  margin-right: -77px;
   animation: vai_2016 5s ease-in-out 5s forwards;
 }
 span.sete{
@@ -79,7 +79,7 @@ span.sete:before{
   transform: rotate(0deg);
   transform-origin: left top;
   position: absolute;
-  top: 55px;
+  top: 70px;
   left: 10px;
   z-index: -1;
   animation: entrega_balao 1s ease-in-out 4s;
@@ -94,8 +94,23 @@ span.sete:before{
   top: 50%;
   margin-top: -165px;
   right: 0%;
-  margin-right: -200px;
+  margin-right: -100px;
+  z-index: 10;
   animation: vem_e_vai_balao 10s ease-in-out forwards;
+}
+.stick{
+  width: 3px;
+  height: 140px;
+  display: block;
+  background: #ff6600;
+  border-radius: 0%;
+  position: absolute;
+  top: 60%;
+  margin-top: -155px;
+  right: 0%;
+  margin-right: -90px;
+  z-index: 1;
+  animation: stick_ani 10s ease-in-out forwards;
 }
 .balao:before{
   content: '';
@@ -103,25 +118,28 @@ span.sete:before{
   height: 0;
   border-style: solid;
   border-width: 0 10px 20px 10px;
-  border-color: transparent transparent #b19b32 transparent;
+  border-color: transparent transparent #ff4800 transparent;
   position: absolute;
   left: 50%;
-  margin-left: -5px;
-  bottom: -10px;
-  z-index: -1;
+  margin-left: -6px;
+  bottom: 20px;
+  margin-top: -100px;
+  z-index: 10;
 }
-.balao:after{
+/*.balao:after{
   content: '';
   width: 4px;
   height: 100px;
   display: block;
-  background: #fff;
+  background: rgb(6, 171, 248);
   border-radius: 0px 0px 3px 3px;
   position: absolute;
+  margin-top: -155px;
   left: 50%;
-  margin-left: -2px;
-  bottom: -110px;
-}
+  margin-left: 0px;
+  z-index: -1;
+  bottom: 0px;
+}*/
 .fogos{
   width: 100%;
   height: 100%;
@@ -154,8 +172,8 @@ span.sete:before{
   top: 70%;
 }
 .fogos>div span{
-  width: 6px;
-  height: 6px;
+  width: 3px;
+  height: 3px;
   display: block;
   position: absolute;
   top: 0;
@@ -175,29 +193,29 @@ span.sete:before{
 .fogos>div span:before{
   content: '';
   width: 2px;
-  height: 50px;
+  height: 30px;
   display: block;
   background: #f5cc06;
   position: absolute;
-  top: -60px;
+  top: -40px;
   left: 2px;
 }
 .fogos>div span:after{
   content: '';
   width: 2px;
-  height: 50px;
+  height: 30px;
   display: block;
   background: #f5cc06;
   position: absolute;
-  bottom: -60px;
+  bottom: -40px;
   left: 2px;
 }
 .fogos>div span i:before{
   content: '';
-  width: 3px;
-  height: 3px;
+  width: 2px;
+  height: 2px;
   display: block;
-  border-radius: 50%;
+  border-radius: 40%;
   background: rgb(255, 154, 3);
   position: absolute;
   top: -15px;
@@ -205,22 +223,28 @@ span.sete:before{
 }
 .fogos>div span i:after{
   content: '';
-  width: 3px;
-  height: 3px;
+  width: 2px;
+  height: 2px;
   display: block;
-  border-radius: 50%;
+  border-radius: 40%;
   background: rgb(248, 135, 5);
   position: absolute;
   top: -15px;
   right: 10px;
 }
 a.author{
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: none;
-  color: #f47c7c;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
+  text-shadow: 2px 2px 5px rgba(255, 3, 234, 0.315);
+  color:rgba(219, 218, 212, 0.158);
+  
+}
+a.git{
+ font-size: 10px;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px rgba(255, 3, 234, 0.315);
+  color: rgba(219, 218, 212, 0.158);
+
 }
 
 @keyframes vem_2017 {
@@ -229,11 +253,11 @@ a.author{
   }
   66.6666% {
     right: 50%;
-    margin-right: -300px;
+    margin-right: -100px;
   }
   90% {
     right: 50%;
-    margin-right: -300px;
+    margin-right: -80px;
   }
   100% {
     right: 50%;
@@ -241,17 +265,52 @@ a.author{
 }
 @keyframes vem_e_vai_balao {
   0% {
+    right: -4%;
+  }
+  40% {
+    right: 50%;
+    margin-right: -100px;
+  }
+  50% {
+    right: 50%;
+    margin-right: -77px;
+    top: 50%;
+  }
+  100% {
+    top: -100%;
+    right: 50%;
+  }
+}
+@keyframes stick_ani{
+  0% {
     right: 0%;
   }
   40% {
     right: 50%;
-    margin-right: -300px;
+    margin-right: -77px;
   }
   50% {
     right: 50%;
-    margin-right: -200px;
+    margin-right: -55px;
     top: 50%;
   }
+  100% {
+    top: -100%;
+    right: 50%;
+  }
+}
+@keyframes vai_2016 {
+  0% {
+    top: 10%;
+  right: 50%;
+  padding-top: 38%;
+  margin-right: -77px;
+  }
+  85%{
+      top:-95%;
+      margin-right: -50px;  
+  }
+
   100% {
     top: -100%;
     right: 50%;
@@ -267,14 +326,7 @@ a.author{
     width: 70px;
   }
 }
-@keyframes vai_2016 {
-  0% {
-    top: 50%;
-  }
-  100% {
-    top: -100%;
-  }
-}
+
 @keyframes vem_feliz {
   0% {
     margin-top: 0px;
@@ -290,7 +342,7 @@ a.author{
     margin-top: 100%;
     opacity: 0;
     width: 2px;
-    height: 30px;
+    height: 20px;
     display: block;
     border-radius: 50%;
   }
@@ -298,7 +350,7 @@ a.author{
     margin-top: 0%;
     opacity: 1;
     width: 2px;
-    height: 30px;
+    height: 20px;
     display: block;
     border-radius: 50%;
   }
